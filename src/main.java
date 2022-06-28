@@ -16,5 +16,7 @@ public class main {
 			System.out.println("Intente de nuevo\nPor favor ingrese un valor numerico sin signos de puntuacion. ");
 			Run();
 		}
+		System.out.println("\n");
+		Run();
 	}
 }

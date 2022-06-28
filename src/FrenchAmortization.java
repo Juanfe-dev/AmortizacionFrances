@@ -5,11 +5,11 @@ public class FrenchAmortization {
 	Scanner input = new Scanner(System.in);
 	creditDTO requestDTO = new creditDTO();
 
-	double toPayPerFee; // La cuota que pagar.
-	double totalMount; // Valor a pagar total
-	double feeInterest; // Interes por cuota
-	double pendingCapital; // Capital restante
-	double amortizationFee; // Cuota de amortizacion
+	private double toPayPerFee; // La cuota que pagar.
+	private double totalMount; // Valor a pagar total
+	private double feeInterest; // Interes por cuota
+	private double pendingCapital; // Capital restante
+	private double amortizationFee; // Cuota de amortizacion
 
 	public void FrenchAmortization() {
 		// void constructor
@@ -42,7 +42,7 @@ public class FrenchAmortization {
 				amortizationFee = toPayPerFee - feeInterest;
 				pendingCapital = pendingCapital - amortizationFee;
 				System.out.printf("Cuota: " + i + ": %f, Interes: %f, Cuota de amortizacion: %f, Capital: %f",
-						toPayPerFee + i, feeInterest, amortizationFee, pendingCapital);
+				toPayPerFee, feeInterest, amortizationFee, pendingCapital);
 				totalMount = totalMount + toPayPerFee;
 			}
 		}
